@@ -8,3 +8,12 @@ sources:
         description: a table of customers
       - name: orders
         description: a table of orders
+        config:
+          freshness:
+            warn_after:
+              count: 5
+              period: day
+            error_after:
+              count: 14
+              period: day
+          loaded_at_field: _etl_loaded_at
