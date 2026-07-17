@@ -8,8 +8,19 @@ sources:
     tables:
       - name: customers
         description: a table of customers
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              
       - name: orders
         description: a table of orders
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
         config:
           freshness:
             warn_after:
