@@ -17,7 +17,7 @@ models:
           - unique
 
       - name: order_status
-        description: order status
+        description: "{{ docs('order_status') }}"
         data_tests:
           - accepted_values:
               arguments:
